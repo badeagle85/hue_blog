@@ -1,13 +1,13 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Ranking Topic',
+  title: 'Hue Blog',
   author: 'Hue',
-  headerTitle: 'Ranking Topic',
-  description: '기사 수집 및 랭킹 서비스',
+  headerTitle: 'Hue Blog',
+  description: 'Hue Blog',
   language: 'ko-kr',
   theme: 'system',
-  siteUrl: 'https://ranking-topic.vercel.app',
-  siteRepo: 'https://github.com/badeagle85/ranking_topic',
+  siteUrl: 'https://hue-blog.vercel.app',
+  siteRepo: 'https://github.com/badeagle85/hue_blog.',
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
   email: 'badeagle85@gmail.com',

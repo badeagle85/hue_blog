@@ -1,12 +1,16 @@
-import Link from '@/components/Link'
-import Tag from '@/components/Tag'
-import siteMetadata from '@/data/siteMetadata'
-import { formatDate } from 'pliny/utils/formatDate'
+import { sortPosts, allCoreContent } from 'pliny/utils/contentlayer'
+import { allBlogs } from 'contentlayer/generated'
+import Link from 'next/link'
 import NewsletterForm from 'pliny/ui/NewsletterForm'
+import siteMetadata from '@/data/siteMetadata'
+import Tag from '@/components/Tag'
+import { formatDate } from 'pliny/utils/formatDate'
 
-const MAX_DISPLAY = 5
+export default async function Page() {
+  const sortedPosts = sortPosts(allBlogs)
+  const posts = allCoreContent(sortedPosts)
+  const MAX_DISPLAY = 5
 
-export default function Home({ posts }) {
   return (
     <>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
